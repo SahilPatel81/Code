@@ -38,6 +38,7 @@ public class LZWmod {
             //TODO: read and append the next char to current
             char nextChar = BinaryStdIn.readChar();
             current.append(nextChar);
+            
             if(!st.contains(current)){
               BinaryStdOut.write(codeword, W);
               if (code < L)    // Add to symbol table if not full
