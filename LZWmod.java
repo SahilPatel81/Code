@@ -1,3 +1,9 @@
+import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.util.Scanner;
+
 /*************************************************************************
  *  Compilation:  javac LZWmod.java
  *  Compression: java LZWmod - < code.txt > code.lzw
@@ -19,8 +25,8 @@ public class LZWmod {
     private static final int L = 4096;       // number of codewords = 2^W
     private static final int W = 12;         // codeword width
 
-    public static void compress() {
-      //TODO: Modify TSTmod so that the key is a
+    public static void compress() {        
+       //TODO: Modify TSTmod so that the key is a
       //StringBuilder instead of String
         TSTmod<Integer> st = new TSTmod<Integer>();
         for (int i = 0; i < R; i++)
@@ -51,9 +57,9 @@ public class LZWmod {
 
         //TODO: Write the codeword of whatever remains
         //in current
-        if (current != null) {
+        //if (current != null) {
             st.put(current,code++);
-        }
+        //}
 
         BinaryStdOut.write(R, W); //Write EOF
         BinaryStdOut.close();

@@ -32,7 +32,8 @@
             "name": "LZWmod",
             "request": "launch",
             "mainClass": "LZWmod",
-            "projectName": "Code_ee2f8a81"             
+            "projectName": "Code_ee2f8a81",
+            "args": ["-", "test2.txt", "abc.zip"] 
         },
         {
             "type": "java",
