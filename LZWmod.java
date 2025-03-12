@@ -62,6 +62,7 @@ public class LZWmod {
      
 
         BinaryStdOut.write(R, W); //Write EOF
+        
         BinaryStdOut.close();
     }
 
