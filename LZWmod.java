@@ -32,7 +32,6 @@ public class LZWmod {
         for (int i = 0; i < R; i++)
             st.put(new StringBuilder("" + (char) i), i);
         int code = R+1;  // R is codeword for EOF
-
         //initialize the current string
         StringBuilder current = new StringBuilder();
         //read and append the first char
@@ -62,7 +61,7 @@ public class LZWmod {
      
 
         BinaryStdOut.write(R, W); //Write EOF
-        
+
         BinaryStdOut.close();
     }
 
